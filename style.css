@@ -1,0 +1,514 @@
+/* CSS (c) Joshua Gigg & James Martin 2010
+ *   Made for University of Portsmouth
+ *   B202 - Group Design Project 2010
+ *   "Team Cuddles"
+ */
+
+BODY
+{
+	background-color: #fff;
+	color: #000;
+	font-family: Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+img { border: 0; }
+
+a { text-decoration: none; outline: none; }
+
+.mainimg
+{
+	border: 4px solid transparent;
+	position: absolute;
+}
+
+
+#leftmenu
+{
+	z-index: 1000000;
+	border: 1px solid #333333;
+	border-left: 0;
+	position: fixed;
+	left: 0;
+	top: 50%;
+	margin-top: -150px;
+	height: 300px;
+	width: 70px;
+	-moz-border-radius-topright: 15px;
+	-webkit-border-top-right-radius: 15px;
+	-moz-border-radius-bottomright: 15px;
+	-webkit-border-bottom-right-radius: 15px;
+	background-color: #fff;
+}
+
+#leftmenu #more
+{
+	border: 1px solid #333;
+	border-left: 0;
+	-moz-border-radius-topright: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	background-color: #fff;
+	position: fixed;
+	left: 70px;
+	top: 50%;
+	margin-top: -25px;
+	height: 50px;
+	width: 17px;
+}
+#leftmenu #more:hover
+{
+	cursor: pointer;
+}
+
+#leftmenu #more a
+{
+	-webkit-transform: rotate(-90deg); 
+	-moz-transform: rotate(-90deg);	
+	color: #666666;
+	display:block;
+	text-transform:uppercase;
+	font-size: 11pt;
+	margin-top: 25px;
+	margin-left: -1px;
+}
+
+#leftmenu ul
+{
+	list-style: none;
+	padding: 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#leftmenu li
+{
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+#wrapper
+{
+	z-index: 0;
+	overflow: hidden;
+	background: -moz-linear-gradient(top, #e2e2ec, #fffefe);
+	background: -webkit-gradient(linear, left top, left bottom, from(#e2e2ec), to(#fffefe));
+	height: 100%;
+}
+
+
+
+#bottom
+{
+	border-top: 1px solid #000;
+	width: 100%;
+	height: 150px;
+	position: fixed;
+	bottom: 0;
+	z-index: 1000000;
+	background-color: #fbfbfb;
+}
+
+.source
+{
+	display: none;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	
+	text-align: center;
+	background-color: #f8f8f8;
+	border: 1px solid #000;
+	padding: 10px;
+	
+	width: 670px;
+	height: 380px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -190px;
+	margin-left: -335px;
+	
+	z-index: 1000000;
+}
+
+.source .close
+{
+	-moz-border-radius-topright: 15px;
+	-webkit-border-top-right-radius: 15px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	
+	float: right;
+	
+	
+	background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, rgb(201,118,98)),
+    color-stop(0.5, rgb(182,57,35)),
+    color-stop(0.51, rgb(207,116,100)),
+    color-stop(1, rgb(231,170,160))
+);
+background: -moz-linear-gradient(
+    center bottom,
+    rgb(201,118,98) 0%,
+    rgb(182,57,35) 50%,
+    rgb(207,116,100) 51%,
+    rgb(231,170,160) 100%
+);
+	
+	border: 1px solid #512920;
+	padding: 2px;
+	line-height: 30px;
+	text-align: center;
+	margin-top: -11px;
+	margin-right: -11px;
+	height: 30px;
+	width: 60px;
+	color: #fff;
+	z-index: 1000001;
+	font-size: 16pt;
+}
+
+.source .close:hover
+{
+-webkit-box-shadow:0 0 15px #de8772; 
+-moz-box-shadow: 0 0 15px #de8772; 
+box-shadow:0 0 15px #de8772;
+-webkit-transition:all .15s ease-in;
+}
+
+
+
+.source h1
+{
+	margin: 0;
+	padding: 0;
+	font-size: 17pt;
+	float: left;
+	text-align: left;
+}
+
+.source span
+{
+	float: right;
+	display: block;
+	margin-top: -10px;
+	margin-right: 3px;
+
+}
+
+.source .input
+{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 1px solid #000;
+	padding: 10px;
+	font-size: 14pt;
+	color: #222222;
+	width: 95%;
+	margin-top: 5px;
+	margin-bottom: 6px;
+}
+
+.source .submit
+{
+	margin: 0 auto;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #7ab17f;
+	border: 1px solid #206226;
+	padding: 3px;
+	font-size: 12pt;
+}
+
+
+
+.source .close a
+{
+	text-decoration: none;
+}
+
+.source .loading
+{
+	margin-top: -10px;
+	display: block;
+	height: 11pt;
+	text-align: center;
+	font-size: 11pt;
+	color: #636363;
+}
+
+.source .loading .error
+{
+	color: #9d1515;
+}
+
+#source-flickr span
+{
+	background: transparent url(images/source-logos/flickr.png) no-repeat;
+	width: 100px;
+	height: 39px;
+}
+
+#source-picasa span
+{
+	background: transparent url(images/source-logos/picasa.png) no-repeat;
+	width: 100px;
+	height: 40px;
+}
+
+#source-photobucket span
+{
+	background: transparent url(images/source-logos/photobucket.png) no-repeat;
+	width: 100px;
+	height: 40px;
+}
+
+#source-deviantart span
+{
+	background: transparent url(images/source-logos/deviantart.png) no-repeat;
+	width: 100px;
+	height: 39px;	
+}
+
+#source-twitpic span
+{
+	background: transparent url(images/source-logos/twitpic.png) no-repeat;
+	width: 100px;
+	height: 38px;	
+}
+
+
+
+#hit_her_in_the_stomach
+{
+	/* to avoid team age pregnancy */
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100000;
+	background-color: #1a1a1a;
+	opacity: 0.7;
+}
+
+#trashcan
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 100002;
+	border-left: 1px solid #000;
+	background-color: #fff;
+}
+
+#trashcan img
+{
+		height: 150px;
+}
+
+
+
+/* UL Polaroids
+ * From http://www.zurb.com/article/305/easily-turn-your-images-into-polaroids-wi
+ * OMG, thank you, this is AMAZING */
+
+ul.polaroids { height: 140px;}
+ul.polaroids li { display: inline; }
+ul.polaroids a { background: #fff; display: inline; float: left; margin: 0 0 7px 10px; width: auto;
+padding: 3px 3px 3px; text-align: center; font-family: "Marker Felt", sans-serif; text-decoration: none;
+color: #333; font-size: 10px; -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25); -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);}
+ul.polaroids img { display: block; margin-bottom: 4px; margin-left: auto; margin-right: auto; }
+ul.polaroids a:after { content: attr(title); }
+
+
+#quote
+{
+	position: absolute;
+	top: 50%;
+	margin-top: -100px;
+	left: 70px;
+	width: 270px;
+	z-index: 1000000000;
+	display: none;
+}
+
+#quote small
+{
+	margin: 0 auto;
+	text-align: center;
+	font-size: 8pt;
+	color: #7c7c7c;
+}
+
+#quote p
+{
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+#go-left
+{
+	float: left;
+}
+
+#go-right
+{
+	float: right;
+	margin-right: 150px;
+}
+
+
+#bl
+{
+	overflow: hidden;
+}
+
+
+/* From: http://nicolasgallagher.com/progressive-enhancement-pure-css-speech-bubbles/ */
+/* Bubble with a border rather than solid colour
+------------------------------------------ */
+
+.triangle-border {
+	position:relative;
+	padding:5px;
+	margin:1em 0 3em;
+	border:5px solid #5a8f00;
+	color:#333;
+	background:#fff;
+	
+	/* css3 */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+/* creates the larger triangle */
+.triangle-border:before {
+	content:"\00a0";
+	display:block; /* reduce the damage in FF3.0 */
+	position:absolute;
+	bottom:-40px; /* value = - border-top-width - border-bottom-width */
+	left:40px; /* controls horizontal position */
+	width:0;
+	height:0;
+	border:20px solid transparent;
+	border-top-color:#5a8f00;
+}
+
+/* creates the smaller  triangle */
+.triangle-border:after {
+	content:"\00a0";
+	display:block; /* reduce the damage in FF3.0 */
+	position:absolute;
+	bottom:-26px; /* value = - border-top-width - border-bottom-width */
+	left:47px; /* value = (:before left) + (:before border-left) - (:after border-left) */
+	width:0;
+	height:0;
+	border:13px solid transparent;
+	border-top-color:#fff;
+}
+
+/* Bubble with a border rather than solid colour
+------------------------------------------ */
+
+.triangle-border.left {
+	margin-left:30px;
+}
+
+/* creates the larger triangle */
+.triangle-border.left:before {
+	top:10px; /* controls vertical position */
+	left:-60px; /* value = - border-left-width - border-right-width */
+	bottom:auto;
+	border-width:15px 30px;
+	border-style:solid;
+	border-color:transparent #5a8f00 transparent transparent;
+}
+
+/* creates the smaller  triangle */
+.triangle-border.left:after {
+	top:16px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+	left:-42px; /* value = - border-left-width - border-right-width */
+	bottom:auto;
+	border-width:9px 21px;
+	border-style:solid;
+	border-color:transparent #fff transparent transparent;
+}
+
+
+/* Keyboard Stuff */
+
+.keyboard { margin-top: 10px; position: relative; }
+
+.kb-row1, .kb-row2, .kb-row3, .kb-row0, .kb-row4 { clear: both;}
+
+.kb-row1 { padding-left: 40px; }
+
+.kb-row2
+{
+	padding-left: 62px;
+}
+
+.kb-row3
+{
+	padding-left: 88px;
+}
+
+.kb-row4
+{
+	padding-left: 144px;
+}
+
+.kb-key
+{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: -moz-linear-gradient(top, #e2e2ec, #fffefe);
+	background: -webkit-gradient(linear, left top, left bottom, from(#e2e2ec), to(#fffefe));
+	width: 48px;
+	height: 48px;
+	font-size: 16pt;
+	line-height: 48px;
+	text-align: center;
+	border: 1px solid #696969;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	float: left;
+	-moz-box-shadow: 1px 2px 5px #c2c1c1;
+	-webkit-box-shadow: 1px 2px 5px #c2c1c1;
+        box-shadow: 1px 2px 5px #c2c1c1;
+}
+
+.kb-key.backspace
+{
+	width: 130px;
+}
+
+
+.kb-key.enter
+{
+	position: absolute;
+	right: 0;
+	width: 82px;
+	height: 99px;
+	line-height: 32px;
+	background: -moz-linear-gradient(top, #7ab17f, #abe7b1);
+	background: -webkit-gradient(linear, left top, left bottom, from(#7ab17f), to(#abe7b1));
+	border: 1px solid #206226;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.kb-key.space
+{
+	width: 288px;
+}

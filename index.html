@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Team Cuddles - If you see this, something went wrong...</title>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery-cookie.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="js/keyboard.js"></script>
+<script type="text/javascript" src="js/images.js"></script>
+</head>
+<body>
+<div id='hit_her_in_the_stomach'></div>
+
+<div id='source-flickr' class='source'><a href='javascript:closesource("flickr");' class='close'>x</a><span></span>
+	<h1>Add Images</h1><form><input type='text' class='input'></form>
+	<div class='loading' id='loading-flickr'></div>
+	<div class='keyboard' id='flickr-keyboard' title='Add Flickr Photos'></div>
+</div>
+
+<div id='source-picasa' class='source'><a href='javascript:closesource("picasa");' class='close'>x</a><span></span>
+	<h1>Add Images</h1><form><input type='text' class='input'></form>
+	<div class='loading' id='loading-picasa'></div>
+	<div class='keyboard' id='picasa-keyboard' title='Add Picasa Photos'></div>
+</div>
+
+<div id='source-photobucket' class='source'><a href='javascript:closesource("photobucket");' class='close'>x</a><span></span>
+	<h1>Add Images</h1><form><input type='text' class='input'></form>
+	<div class='loading' id='loading-photobucket'></div>
+	<div class='keyboard' id='photobucket-keyboard' title='Add Photobucket Photos'></div>
+</div>
+
+<div id='source-deviantart' class='source'><a href='javascript:closesource("deviantart");' class='close'>x</a><span></span>
+	<h1>Add Images</h1><form><input type='text' class='input'></form>
+	<div class='loading' id='loading-deviantart'></div>
+	<div class='keyboard' id='deviantart-keyboard' title='Add Deviantart Photos'></div>
+</div>
+
+<div id='source-twitpic' class='source'><a href='javascript:closesource("twitpic");' class='close'>x</a><span></span>
+	<h1>Add Images</h1><form><input type='text' class='input'></form>
+	<div class='loading' id='loading-twitpic'></div>
+	<div class='keyboard' id='twitpic-keyboard' title='Add Twitpic Photos'></div>
+</div>	
+
+
+<div id='quote' onclick="javascript:hidequote();"><blockquote class="triangle-border left"> 
+				<p>Tap one of these icons to add some photos to the library.</p>
+<small>Tap this message to dismiss</small>				
+			</blockquote></div>
+<div id='leftmenu'><div id='more'><a href='javascript:toggleside();'>Hide</a></div>
+<ul>
+<li><a href='javascript:addsource("flickr");'><img src='images/flickr.png' /></a></li>
+<li><a href='javascript:addsource("picasa");'><img src='images/picasa.png' /></a></li>
+<li><a href='javascript:addsource("photobucket");'><img src='images/photobucket.png' /></a></li>
+<li><a href='javascript:addsource("deviantart");'><img src='images/deviantart.png' /></a></li>
+<li><a href='javascript:addsource("twitpic");'><img src='images/twitpic.png' /></a></li>
+</ul>
+</div>
+<div id='wrapper'>
+</div>
+<div id='bottom'>
+<a href='javascript:scrollright();' id='go-right'><img src='images/go-right.png' /></a>
+<a href='javascript:scrollleft();' id='go-left'><img src='images/go-left.png' /></a>
+<ul id="bl" class='polaroids'>
+<li><a title="James Martin as a baby"><img src='photos/2.jpg' style='height: 100px;' /></a></li>
+</ul>
+<div id='trashcan'><img src='images/TRASH_EMPTY.png' /></div>
+</div>
+</body>
+</html>
